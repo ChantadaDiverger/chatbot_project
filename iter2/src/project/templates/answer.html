@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Respuesta</title>
+</head>
+<body>
+    <h1>Pregunta recibida</h1>
+    <p><strong>Pregunta:</strong> {{ question }}</p>
+    <p><strong>Respuesta:</strong> {{ answer }}</p>
+    {% if error %}
+        <p style="color: red;"><strong>Error:</strong> {{ error }}</p>
+    {% endif %}
+    <p><a href="/ask">Haz otra pregunta</a></p>
+    <p><a href="/">Volver a la página principal</a></p>
+</body>
+</html>
